@@ -19,8 +19,14 @@
 __version__ = '0.1.0'
 
 
-# Enable e.g. "from datadiver import metrics"
-from datadiver.library import dataset_types
-from datadiver.library import dataset_utils
-from datadiver.library import jax_model_fitting
-from datadiver.library import metrics
+from datadiver.library.code_metrics import get_complexity_metrics
+from datadiver.library.code_metrics import get_complexity_scores
+from datadiver.library.code_metrics import normalize_metrics
+from datadiver.library.code_metrics import verify_num_params
+from datadiver.library.jax_model_fitting import choice_prediction_twofold_crossvalidation
+from datadiver.library.jax_model_fitting import ChoicePredictionAgentFunction
+from datadiver.library.jax_model_fitting import ChoicePredictionDataset
+from datadiver.library.jax_model_fitting import evaluate_choice_prediction_model
+from datadiver.library.jax_model_fitting import fit_choice_prediction_model
+from datadiver.library.jax_model_fitting import make_choice_prediction_dataset
+from datadiver.library.jax_model_fitting import split_choice_prediction_dataset
